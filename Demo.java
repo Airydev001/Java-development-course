@@ -24,15 +24,10 @@ public class Demo{
 
 
 int n = 1;
-
-while(n <= 4){
-    System.out.println("Hi" +" "+ n);
-    int j= 1;
-    while(j <= 3){
-        System.out.println("Hello" + " " + j);
-        j++;
-    }
+do
+{
+    System.out.println("Hello" + n);
     n++;
+} while(n<=4);
     }
-}
 }
