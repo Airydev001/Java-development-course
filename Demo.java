@@ -1,3 +1,18 @@
+class Calculator{
+    public int add(int a, int b){
+        return a + b;
+    }
+    public int sub(int a, int b){
+        return a - b;
+    }
+    public int mul(int a, int b){
+        return a * b;
+    }
+    public int div(int a, int b){
+        return a / b;
+    }
+}
+
 public class Demo{
     public static void main(String[] args){
     //     int x = 20;
@@ -23,11 +38,17 @@ public class Demo{
 // System.out.println(result);
 
 
-int n = 1;
-do
-{
-    System.out.println("Hello" + n);
-    n++;
-} while(n<=4);
+
+
+for(int i=0; i <7; i++){
+    Calculator c = new Calculator();
+    
+    c.add(5, 5);
+    System.out.println("Hi welcome " +  c.add(5, 5));
+
+    for(int j = 0; j < 5; j++){
+        System.out.println("Hello " + j);
+    }
+}
     }
 }
