@@ -1,15 +1,12 @@
 class Calculator{
-    public int add(int a, int b){
-        return a + b;
+    public int add(int n1, int n2, int n3 ){
+        return n1 + n2 + n3;
     }
-    public int sub(int a, int b){
-        return a - b;
+    public int add(int n1, int n2){
+        return n1 + n2;
     }
-    public int mul(int a, int b){
-        return a * b;
-    }
-    public int div(int a, int b){
-        return a / b;
+    public  double add(int n1, double n2){
+        return n1 + n2;
     }
 }
 class Computer{
