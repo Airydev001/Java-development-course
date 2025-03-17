@@ -12,6 +12,17 @@ class Calculator{
         return a / b;
     }
 }
+class Computer{
+    public void playMusic(){
+        System.out.println("Music Playing");
+    }
+    public String getMeApen(int cost){
+        if(cost >= 10)
+               return "Pen";
+        else
+            return "Nothing";
+    }
+}
 
 public class Demo{
     public static void main(String[] args){
@@ -36,19 +47,12 @@ public class Demo{
 //     // result = 20;
 //     result = n%2==0 ? 10 : 20;
 // System.out.println(result);
+Computer obj = new Computer();
+obj.playMusic();
+ String penOutput = obj.getMeApen(20);
+ System.out.println(penOutput);
 
 
 
-
-for(int i=0; i <7; i++){
-    Calculator c = new Calculator();
-    
-    c.add(5, 5);
-    System.out.println("Hi welcome " +  c.add(5, 5));
-
-    for(int j = 0; j < 5; j++){
-        System.out.println("Hello " + j);
-    }
-}
     }
 }
