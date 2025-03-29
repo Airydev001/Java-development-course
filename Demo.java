@@ -58,20 +58,22 @@ public class Demo{
 //     }
 //     System.out.println();
 // }
-int[][] numbers = {
-    {1, 2, 3},
-    {4, 5, 6},
-    {7, 8, 9}
-};
+        int[][] matrix = {
+            {4, 2, 9},
+            {1, 6, 7},
+            {8, 3, 5}
+        };
 
-int sum = 0;
-for (int i = 0; i < numbers.length; i++) {
-    for (int j = 0; j < numbers[i].length; j++) {
-        sum += numbers[i][j];
+        int max = matrix[0][0];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (matrix[i][j] > max) {
+                    max = matrix[i][j];
+                }
+            }
+        }
+
+        System.out.println("Largest Element: " + max);
     }
 }
 
-System.out.println("Sum = " + sum);
-
-    }
-}
